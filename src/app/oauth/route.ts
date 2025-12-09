@@ -33,5 +33,5 @@ export async function GET(request: NextRequest) {
   });
 
   // Redirect the logged in user to the account page
-  return NextResponse.redirect(`${request.nextUrl.origin}/`);
+  return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/`);
 }
